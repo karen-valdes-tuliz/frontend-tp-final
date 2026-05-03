@@ -1,0 +1,540 @@
+/*Reseteo global: Elimina márgenes y paddings por defecto en todos los navegadores*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Secciones génericas: Espaciado vertical para separar visualmente cada bloque de contenido*/
+section {
+  padding: 20px;
+  margin: 40px 0;
+}
+
+/*Header y portada: Contenedor superior con degradado de lavanda a violeta */
+header {
+    background: linear-gradient(60deg, lavender, purple);
+    padding: 40px;
+    text-align: center;
+}
+/* Portada con imagen de fondo decorativa*/
+.portada {
+    min-height: auto;
+    background-image: url(img/layou.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+/* Títutlo principal dentro de la portada. Aplicamos sombra para mejorar la legibilidad sobre la imagen de fondo*/
+.portada h1 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px #4B0082;
+    font-size: 3.5em;
+    font-weight: 700;
+    position: relative;
+}
+
+/* Tipografía general:  */
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background-color: #F3E5F5;
+  color: #333;
+}
+
+/* Títulos principales y subtítulos */
+h1 {
+  text-shadow: 2px 2px 4px #666;
+  font-family: system-ui, "Times New Roman", serif;
+  text-align: center;
+  color: #800080;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+h2, h3 {
+  font-family: system-ui, "Times New Roman", serif;
+  color: #800080;
+  font-weight: 600;
+}
+
+/* Texto corrido y elementos de lista*/
+p, ul li {
+  font-family: system-ui, Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.7;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  text-indent: 0px;
+}
+
+/* Lista de formación: viñetas y separación entre ítems */
+ul > li {
+  list-style: none;
+}
+
+/* Destacamos los dos primeros ítems*/
+ul li:nth-child(1), 
+ul li:nth-child(2) {
+  font-weight: bold;
+  color: #6a5acd;
+  background-color: #f8eaf6;
+  padding: 5px;
+  border-radius: 4px;
+}
+/* Destacamos el último ítem */
+ul li:last-child {
+  font-style: italic;
+  color: #666;
+}
+
+/* Proyectos: Contenedor principal */
+.contenedor-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Tarjeta individual de proyecto */
+.tarjeta-proyecto {
+  position: relative;
+  flex: 1 1 300px;
+  max-width: 400px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #800080;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Detiqueta "Destacado" flotante */
+.badge-destacado {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  background-color: mediumorchid;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Títulos dentro de cada tarjeta */
+.tarjeta-proyecto h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #800080;
+  font-weight: 600;
+}
+
+/* Texto descriptivo dentro de las tarjetas */
+.tarjeta-proyecto p {
+  margin: 5px 0;
+  color: #333;
+  text-indent: 0;
+  font-size: 1em;
+  text-align: justify;
+}
+
+/* Efecto hover: la tarjeta se levanta y la sombra se acentúa */
+.tarjeta-proyecto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes: Estilos generales para todas las imágenes */
+img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Bloque de foto de perfil */
+.contenedor-foto-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #f8eaf6;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de perfil con borde redondeado y sombra*/
+.contenedor-foto-perfil img {
+  border-radius: 15px;
+  width: 200px;
+  height: auto;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Texto descriptivo de la foto */
+.contenedor-foto-perfil p {
+  font-size: 1.1em;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Enlaces: Estilo base para todos los links */
+a {
+  color: #4B0082;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+a:hover {
+  color: #800080;
+  text-decoration: underline;
+}
+
+a[href^="https://"] {
+  color: purple;
+  font-weight: bold;
+}
+
+/* Sección de contacto: */
+.titulo-contacto {
+  text-align: center;
+  font-size: 2em;
+  color: #800080;
+  margin-bottom: 20px;
+}
+
+/* Contenedor principal del bloque de contacto */
+.contacto {
+  background-color: #f8eaf6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+/* Texto introductorio del contacto */
+.contacto .intro {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #333;
+}
+/* Subtítulo dentro de esta sección */
+.contacto h3 {
+  text-align: center;
+  color: #800080;
+  margin: 30px 0 15px;
+}
+
+/* Formulario: disposición en columna */
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Agrupación de campos del formulario */
+.contacto fieldset {
+  border: 2px solid #800080;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+/* Título de cada grupo de campos */
+.contacto legend {
+  font-weight: bold;
+  color: #800080;
+}
+
+/* Etiquetas de los campos */
+.contacto label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Grupo de radios (si/no) en línea*/
+.radio-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 3px;
+}
+
+.radio-group label {
+  display: inline;
+  margin-right: 10px;
+}
+
+/* Campos de texto, select y área de texto*/
+.contacto input,
+.contacto select,
+.contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  width: 100%;
+}
+
+/* Botón de envío de formulario */
+.contacto input[type="submit"] {
+  background-color: #800080;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Aplicamos efecto hover del botón */
+.contacto input[type="submit"]:hover {
+  background-color: #25D366;
+}
+
+/* Footer: contenedor principal */
+.footer {
+  background-color: #B39DDB;
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
+  margin-top: 40px;
+}
+
+/* Enlaces de navegación */
+.footer-links {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+/* Aplicamos efecto hover */
+.footer-links a:hover {
+  color: #4B0082;
+}
+
+.footer-contacto p {
+  color: white;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.footer-contacto a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Aplicamos efecto hover */
+.footer-contacto a:hover {
+  color: #4B0082;
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  margin-top: 15px;
+  font-size: 0.8em;
+  color: #FFFFFF;
+}
+
+/* Decoraciones y jerarquía visual: Agregamos corazoes antes y después de cada título h2*/
+h2::before {
+  content: "♡ ";
+  color: crimson;
+}
+h2::after {
+  content: " ♡";
+  color: crimson;
+}
+
+/* Párrafo que sigue inmediatamente a un h2 */
+h2 + p {
+  font-style: italic;
+  color: #555;
+}
+
+/* Todos los párrafos hermanos de un h2 mantienen color base */
+h2 ~ p {
+  color: #333;
+}
+
+/* Media queries: Ajustes para pantallas medianas */
+@media (max-width: 768px) {
+  .contenedor-proyectos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta-proyecto {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+  .contenedor-foto-perfil {
+    max-width: 90%;
+  }
+
+  .contacto {
+    max-width: 90%;
+  }
+}
+
+/* Ajustes para pantallas pequeñas*/
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  .titulo-contacto {
+    font-size: 1.6em;
+  }
+
+  .tarjeta-proyecto {
+    padding: 15px;
+  }
+
+  .contenedor-foto-perfil img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .boton-whatsapp-flotante {
+    padding: 8px 14px;
+    font-size: 0.9em;
+  }
+}
+
+
+/* Botón flotante de WhatsApp: Botón fijo en la esquina inferior derecha */
+.boton-whatsapp-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: system-ui, Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+/* Aplicamos efecto hover */
+.boton-whatsapp-flotante:hover {
+  background-color: #C71585;
+  text-decoration: none;
+  color: white;
+  transform: scale(1.05);
+}
+/* Aseguramos de que el texto sea blanco incluso si hay reglas externas */
+.boton-whatsapp-flotante,
+.boton-whatsapp-flotante[href^="https://"] {
+color: white;
+}
+/* Aplicamos sombra sutil para mejorar la legibilidad */
+.boton-whatsapp-flotante {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Navegación principal: Barra fija en la parte superior */
+.navegacion-principal {
+  position: sticky;
+  top: 0;
+  background-color: #F3E5F5;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: left;
+  gap: 40px;
+  z-index: 100;
+  border-bottom: 2px solid #800080;
+}
+
+/* Estilo de cada enlace del navegador */
+.navegacion-principal a {
+  color: indigo;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 8px 16px;
+  border: 2px solid #8a2be2;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+/* Aplicamos efecto hover */
+.navegacion-principal a:hover {
+  transform: scale(1.05);
+  background-color: mediumpurple;
+  color: white;
+  border-color: #C71585;
+}
+
+/* Scroll suave: Aplicamos desplazamiento suave al hacer click en enlaces internos */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Evita que el nav sticky tape los títulos al hacer click */
+h2, section {
+    scroll-margin-top: 80px;
+}
+
+/* Sección cita: Contenedor principal */
+.seccion-cita {
+  text-align: center;
+  background-color: #f8eaf6;
+  padding: 50px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Estilo del bloque que contiene la frase */
+.seccion-cita blockquote {
+  font-size: 1.4em;
+  font-style: italic;
+  color: #4B0082;
+  margin: 20px 0;
+}
+
+/* Estilo de la autoría de la cita */
+.seccion-cita cite {
+  display: block;
+  margin-top: 15px;
+  font-size: 1em;
+  color: #800080;
+  font-weight: bold;
+}
