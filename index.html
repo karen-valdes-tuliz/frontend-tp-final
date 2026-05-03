@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <!-- Codificación de caracteres en UTF-8 para soportar acentos y eñes -->
+    <meta charset="UTF-8">
+
+    <!-- Escala la página automáticamente en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- El titulo que se muestra en la pestaña del navegador-->
+    <title>🌸Portafolio de Karen Valdes🌸</title>
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="styles.css">  
+</head>
+
+<body>
+
+   <!-- Navegación principa: barra fija con enlaces internos para moverse entre secciones-->
+    <nav class="navegacion-principal">
+      <!-- Cada enlace lleva a una sección identificada con ID -->
+       <a href="#perfil"> Perfil</a>
+       <a href="#formacion"> Formacion</a>
+       <a href="#proyectos"> Proyectos</a>
+       <a href="#contacto"> Contacto</a>
+    </nav>
+
+    <!-- Portada: Encabezado principal con nombre y fondo decorativo-->
+    <header class="portada">
+            <h1> 👩🏻‍💻✨Karen Valdes✨</h1>
+        </header>
+
+
+    <!-- Perfil profesional: Resumen de orientación laboral y estudios actuales -->
+     <section id="perfil"> 
+      <h2> 💼✨Perfil profesional✨</h2>
+      <p> Perfil junior orientado a <strong>Helpdesk</strong> y <strong> Soporte IT</strong>, con formación en microinformática y desarrollo web.</p>
+      <p>Actualmente estudiante de <span>Licenciatura en Informática</span> en la UNAHUR y de <span>Frontend</span> y <span>Backend</span> en ADA ITW</p>
+
+    <!-- Bloque con foto de perfil y descripción-->
+    <div class="contenedor-foto-perfil">
+            <img src="img/foto.jpg" alt="Foto de Karen">
+                <p>📷✨Foto de mi CV✨</p>
+    </div>
+   </section>
+
+    <!-- Sección de formación academica: Lista de estudios formales y cursos complementarios-->
+    <section id="formacion">
+        <h2>📚✨ Formación ✨</h2>
+        <ul>
+            <li>🎓 Licenciatura en Informática (UNAHUR, en curso)</li>
+            <li>💻 Frontend y Backend (ADA ITW, en curso)</li>
+            <li>🖥️ IT Patagonia JENI (2025)</li>
+            <li>⚙️ Google / Junior Achievement Soporte IT (2024)</li>
+            <li>📡 UTN / EMPUJAR Helpdesk (2024)</li>
+        </ul>
+      </section>
+
+     <!-- Sección de la cita donde hay una frase inspiradora de Ada Lovelace. -->
+      <!-- La cita conecta con el nombre de la fundación: ADA ITW y con la mención en el formulario -->
+      <section id="cita" class="seccion-cita">
+         <h2>✨Frase que me inspira✨</h2>
+         <blockquote>
+            <p>"Las máquinas no piensan, pero pueden hacer cualquier cosa que sepamos ordenarles que hagan."</p>
+            <cite>Ada Lovelace, primera programadora de la historia.</cite>
+         </blockquote>
+      </section>
+
+     <!-- Sección de proyectos: Grid de tarjetas con trabajos realizados durante el curso -->
+      <section id="proyectos" class="contenedor-proyectos">
+        <h2> ✨Proyectos✨</h2>
+
+        <!-- Tarjeta 1: JavaScript -->
+         <div class="tarjeta-proyecto">
+            <div class="badge-destacado"> ✨Destacado✨ </div>
+            <h3>Biblioteca funcional en JavaScript</h3>
+            <p>Este proyecto fue mi trabajo final de JavaScript en ADA ITW, realizado como primera parte antes de inciciar las carreras de Frontend y Backend. </p> 
+            <p>Desarrollé un sistema de gestión de biblioteca con funcionalidades para agregar, buscar, ordenar y borrar libros, registrar usuarios, realizar préstamos y devoluciones, generar reportes y estadisticas, todo desde la consola. </p>
+            <!-- Link directo a mi repositorio en GitHub -->
+             <a href="https://github.com/karen-valdes-tuliz/biblioteca-integradora" target="_blank"> 🔗 Ver en GitHub</a>
+         </div>
+         
+
+         <!-- Tarjeta 2: Landing page (clase 9) -->
+         <div class="tarjeta-proyecto">
+            <h3>🎨 Landing page Clase 9 - 🌿Alimentación Natural🌿</h3>
+            <p>Landing informativa con diseño responsivo, galería de productos y formulario de contacto.</p>
+            <a href="https://github.com/karen-valdes-tuliz/frontend-adaitw/tree/main/clase9-landing/dietetica" target="_blank"> 🔗 Ver en GitHub</a>
+         </div>
+
+         <!-- Tarjeta 3: Selectores avanzados (clase 12) -->
+         <div class="tarjeta-proyecto">
+            <h3>💻 Clase 12 - Selectores avanzados 💻</h3>
+            <p>Actividad práctica de CSS con selectores avanzados, pseudo-clases y validaciones en formularios. </p>
+            <a href="https://github.com/karen-valdes-tuliz/frontend-adaitw/tree/main/clase12" target="_blank">🔗 Ver en GitHub</a>
+         </div>
+
+         <!--Tarjeta 4: Ejemplo de formulario de contacto -->
+         <div class="tarjeta-proyecto">
+            <h3>📨 Formulario de contacto 📨</h3>
+            <p>Ejemplo de formulario con validación básica en HTML y CSS</p>
+            <a href="#">🔗 Ver en GitHub</a>
+         </div>
+
+         <!-- Tarjeta 5: Ejemplo de diseño de portafolio -->
+         <div class="tarjeta-proyecto">
+         <h3>💼 Diseño de portafolio 💼</h3>
+         <p>Ejemplo de estructura visual con tipográfia y colores consistentes</p>
+         <a href="#">🔗 Ver en GitHub</a>
+         </div>
+
+      </section>
+
+<!-- Sección de contacto: Redes sociales, correo y formulario de contacto -->
+<h2 id="contacto" class="titulo-contacto">✨Contacto:</h2>
+<div class="contacto">
+  <p class="intro">Podes escribirme directamente: </p>
+
+  <div class="datos">
+
+    <p><a href="https://www.linkedin.com/in/karen-valdes-tuliz/" target="_blank">🔗 Mi LinkedIn</a></p>
+    <p><a href="https://github.com/karen-valdes-tuliz" target="_blank">💻 Mi GitHub</a></p>
+    <p><a href="mailto:karenvaldes.job@gmail.com">Enviar correo ✉️</a></p>
+    
+  </div>  
+
+<!-- Formulario de contacto con campos personales, preferencias y mensaje -->
+ <h3>📨Formulario de contacto📨</h3>
+ <form action="#" method="post">
+   <fieldset>
+      <legend> ✨Datos personales✨</legend>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej: Ada Lovelace" required>
+      
+      <label for="email"> Correo electrónico: </label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+   </fieldset>
+
+   <fieldset>
+      <legend>✨Preferencias✨</legend>
+      <label for="pais">País:</label>
+      <select id="pais" name="pais" required>
+         <option value="">Seleccione...</option>
+         <option value="arg">Argentina</option>
+         <option value="bra">Brasil</option>
+         <option value="chl">Chile</option>
+         <option value="per">Perú</option>
+         <option value="col">Colombia</option>
+         <option value="cri">Costa Rica</option>
+         <option value="dom">República Dominicana</option>
+         <option value="ecu">Ecuador</option>
+         <option value="mex">México</option>
+         <option value="ita">Italia</option>
+         <option value="usa">Estados Unidos</option>
+         <option value="gbr">Reino Unido</option>
+         <option value="jpn">Japón</option>
+         <option value="chn">China</option>
+         <option value="kr">Corea del Sur</option>
+      </select>
+
+      <p>¿Desea recibir novedades?</p>
+   <div class="radio-group">
+     <input type="radio" id="si" name="novedades" value="si" checked>
+     <label for="si" class="inline">Sí</label>
+     <input type="radio" id="no" name="novedades" value="no">
+     <label for="no" class="inline">No</label>
+   </div>
+   </fieldset>
+
+   <fieldset>
+      <legend>✨Mensaje✨</legend>
+      <label for="mensaje">Escribe tu mensaje: </label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí..." required></textarea>
+   </fieldset>
+
+   <input type="submit" value="Enviar">
+ </form>
+</div>
+
+<!-- Botón flotante de WhatsApp -->
+ <!-- Acceso directo para contactarme por WhatsApp (siempre visible) -->
+<a href="https://wa.me/5491157586307" class="boton-whatsapp-flotante" target="_blank">
+   💬WhatsApp
+</a>
+
+<!-- Footer: navegación secundaria + contacto + copyright -->
+ <footer class="footer">
+   <!-- Enlaces internos para facilitar la navegación-->
+    <div class="footer-links">
+      <a href="#perfil"> Perfil</a>
+      <a href="#formacion"> Formación</a>
+      <a href="#proyectos"> Proyectos</a>
+      <a href="#contacto"> Contacto</a>
+    </div>
+
+    <!-- Medios de contacto directo -->
+    <div class="footer-contacto">
+      <p>📧 karenvaldes.job@gmail.com</p>
+      <p> 🔗 <a href="https://www.linkedin.com/in/karen-valdes-tuliz/" target="_blank"> LinkedIn </a></p>
+      <p>💻 <a href="https://github.com/karen-valdes-tuliz" target="_blank">GitHub </a> </p>
+    </div>
+    
+<!-- Derechos de autor -->
+    <p class="footer-copyright"> © 2026 Karen Valdes - Portafolio </p>
+ </footer>
+
+</body>
+</html>
